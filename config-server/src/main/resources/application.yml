@@ -4,8 +4,15 @@ spring:
       server:
         git:
           uri: https://github.com/nobleboyh/microservices-template
-          search-paths: config-server-files/
+          search-paths:
+            - config-server-files
   application:
     name: config-server
 server:
-  port: 0
+  port: 40000
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://127.0.0.1:6789/eureka"
+  instance:
+    prefer-ip-address: true
