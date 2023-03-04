@@ -3,7 +3,9 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/nobleboyh/microservices-template
           search-paths: config-server-files/
   application:
     name: config-server
+server:
+  port: 0
