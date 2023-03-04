@@ -4,3 +4,6 @@ spring:
       server:
         git:
           uri:
+          search-paths: config-server-files/
+  application:
+    name: config-server
