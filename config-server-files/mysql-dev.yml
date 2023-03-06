@@ -8,4 +8,4 @@ spring:
       idle-timeout: 5000
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
