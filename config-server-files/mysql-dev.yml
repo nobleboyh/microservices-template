@@ -1,2 +1,11 @@
-test:
-  mysql: "root/hoang"
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/microservices-test
+    username: microservices
+    password: microservices
+    hikari:
+      idle-timeout: 5000
+  jpa:
+    hibernate:
+      ddl-auto: update
