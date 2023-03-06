@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: notification-service
+  cloud:
+    config:
+      name: notification-service, eureka-client
+  profiles:
+    active: dev
+  config:
+    import: "configserver:http://localhost:40000"
