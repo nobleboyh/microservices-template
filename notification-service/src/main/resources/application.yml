@@ -3,7 +3,7 @@ spring:
     name: notification-service
   cloud:
     config:
-      name: notification-service, eureka-client
+      name: notification-service, eureka-client, kafka
   profiles:
     active: dev
   config:
