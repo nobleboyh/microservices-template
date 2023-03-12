@@ -1,0 +1,5 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:29029
+    topics:
+      topic1: service1-notification
