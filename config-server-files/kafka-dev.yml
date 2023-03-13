@@ -1,5 +1,5 @@
 spring:
   kafka:
-    bootstrap-servers: 'localhost:29029'
+    bootstrap-servers: 'localhost:29092'
     topics:
       topic1: service1-notification
